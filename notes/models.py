@@ -6,3 +6,8 @@ class Notes(models.Model):
     content = models.TextField()
     created = models.DateTimeField(auto_now=True)
     modified = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+        
